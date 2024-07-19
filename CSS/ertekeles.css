@@ -1,0 +1,76 @@
+.wrapper{
+  
+    width: 300px;
+    padding: 2rem 0 1rem 0;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.473);
+    color: black;
+    font-size: 0.4cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h1{
+    font-size: 1 5rem;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  form input{
+    border-radius: 1px;
+    width: 85%;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.055);
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.4s;
+  }
+  input:hover{
+    background: rgba(255, 255, 255, 0.103);
+    transition: all 0.4s;
+  }
+  .recover{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.2rem 1.7rem 0 0;
+  }
+  .recover a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .gombsubmit{
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 8px 0;
+    border-radius: 120px;
+    outline: none;
+    border: none;
+    width: 85%;
+    box-shadow: 0 45px 35px rgba(0, 0, 0, 0.384);
+    cursor: pointer;
+    font-family: cursive;
+    transition: all 0.56s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .gombsubmit:hover{
+    background-color: rgb(0, 0, 0);;
+    color: white;
+    transition: all 0.56s;
+  }
+.kuldes a
+  .textform {
+   margin-bottom: 1.7rem;
+    color: #ffffff;
+  
+  }
+
+
+

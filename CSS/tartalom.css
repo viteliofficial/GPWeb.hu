@@ -1,0 +1,104 @@
+@font-face{
+    font-family: TW-Cen-MT-Condensed;
+    src: url(../FONTS/Tw\ Cen\ MT\ Condensed\ Bold.ttf);
+}
+@font-face{
+    font-family: Poppins-Light;
+    src: url(../FONTS/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url(../FONTS/Poppins/Poppins-Bold.ttf);
+}
+
+.tartalom{
+    font-family: 'TW-Cen-MT-Condensed';
+    display: block;
+    text-align: center;
+    float: center;
+    
+}
+
+.newpost{
+    border-radius: 15px;
+    font-family: 'TW-Cen-MT-Condensed';
+    background-color: rgba(41, 41, 41, 0.205);
+    margin-left: 15cm;
+    margin-right: 15cm;
+    cursor: pointer;
+    
+}
+.post-description{
+    margin-top: -0.4cm;
+    margin-left: 15cm;
+    margin-right: 15cm;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    background-color: rgba(41, 41, 41, 0.205);
+}
+.newpost p{
+    color: white;
+    background-image: linear-gradient(to left, rgb(40, 235, 160),#1a8bd6,#ff0055);
+    animation: animate 10s linear infinite;
+    -webkit-background-size: 500%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+   
+    .tartalom{
+        font-family: 'TW-Cen-MT-Condensed';
+        display: block;
+        text-align: center;
+        float: center;
+        
+    }
+    
+    .newpost{
+        border-radius: 15px;
+        font-family: 'TW-Cen-MT-Condensed';
+        background-color: rgba(41, 41, 41, 0.205);
+        margin-left: 1cm;
+        margin-right: 1cm;
+        cursor: pointer;
+        
+    }
+    .post-description{
+        margin-top: -0.4cm;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        background-color: rgba(41, 41, 41, 0.205);
+    }
+    .newpost p{
+        color: white;
+        background-image: linear-gradient(to left, rgb(40, 235, 160),#1a8bd6,#ff0055);
+        animation: animate 10s linear infinite;
+        -webkit-background-size: 500%;
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0 100%;
+        }
+        50%{
+            background-position: 100% 0%;
+        }
+        100%{
+            background-position: 0 100%;
+        }
+    }
+    
+}
+

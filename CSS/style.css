@@ -1,0 +1,191 @@
+@font-face{
+    font-family: TW-Cen-MT-Condensed;
+    src: url(../FONTS/Tw\ Cen\ MT\ Condensed\ Bold.ttf);
+}
+@font-face{
+    font-family: Poppins-Light;
+    src: url(../FONTS/Poppins/Poppins-Light.ttf);
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url(../FONTS/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family: QuickSand-Light;
+    src: url(../FONTS/QuickSand/Quicksand-Light.ttf);
+}
+
+@font-face{
+    font-family: QuickSand-Bold;
+    src: url(../FONTS/QuickSand/Quicksand-Medium.ttf);
+}
+
+@font-face{
+    font-family: BRUX;
+    src: url(../FONTS/Brux-Font/BRUX.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+
+
+/* Global styles */
+body {
+    font-family: 'TW-Cen-MT-Condensed';
+    background-image: url(../Képek/Background2024.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(64, 173, 50);
+}
+.container {
+    text-align: center;
+}
+
+.gombok{
+    font-family: 'TW-Cen-MT-Condensed';
+    float: auto;
+    border-bottom: 5cm;
+    margin-top: -0.5cm;
+    margin-left: -0.1cm;
+    margin-right: -0.1cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    transition: all 0.3s;
+    border-radius: 0px;
+    padding: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gombok:hover{
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.39);
+    transition: all 0.3s;
+}
+.gombok a {
+    border-radius: 15px;
+    font-size: 0.8cm;
+    color: white;
+    padding-right: 0.5cm;
+    transition: all 0.5s;
+    padding-left: 0.2cm;
+    padding: auto;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.gombok a:hover{
+    opacity: 100%;
+    font-size: 1cm;
+    color: white;
+    transition: all 0.3s;
+    padding: auto;
+    border-radius: 0px;
+    transition: all 0.4s;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+.main {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.date {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(250, 187, 14);
+    border-radius: 16px;
+}
+
+#ma {
+    margin-top: 1rem;
+}
+
+#szuletesnap {
+    display: none;
+    font-size: 2rem;
+    color: #ff6600;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+    @media screen and (max-width: 1000px){
+        body{
+            background-color: rgb(8, 7, 22);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        a{
+            font-size: 0.7cm;
+        }
+        .gomb a:hover{
+            transition: none;
+        }
+        .gombok{
+            font-family: 'Poppins-Light';
+            float: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+            transition: all 1s;
+            text-align: center;
+        }
+        
+        .gombok a {
+            display: list-item;
+            font-size: 0.6cm;
+            text-align: center;
+        
+        }
+        
+        .gombok a:hover{
+            font-size: 0.7cm;
+            transition: all 0.3s;
+            padding: auto;
+        }
+    }   
+
+}
+
+.img{
+    border-radius: 15px;
+  }
