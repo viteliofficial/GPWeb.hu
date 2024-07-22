@@ -45,6 +45,38 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+/* General styles for the hobby section */
+.hobby {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;             /* Padding around the content */
+  border-radius: 10px;       /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px;          /* Max width of the section */
+  margin: 20px auto;         /* Center the section horizontally */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Center the title */
+.hobby .center {
+  text-align: center;        /* Center-align text */
+  color: #333;               /* Dark text color */
+  font-size: 24px;           /* Larger font size for the title */
+  margin-bottom: 10px;       /* Space below the title */
+}
+
+/* Additional styling for the list of hobbies */
+.hobby ul {
+  list-style-type: none;     /* Remove default list styling */
+  padding: 0;                /* Remove default padding */
+}
+
+.hobby li {
+  background-color: #fff;    /* White background for each hobby */
+  margin: 5px 0;             /* Space between each hobby */
+  padding: 10px;             /* Padding inside each hobby item */
+  border-radius: 5px;        /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
 a {
     text-decoration: none;
