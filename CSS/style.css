@@ -1,41 +1,15 @@
-@font-face {
-    font-family: 'TW-Cen-MT-Condensed';
-    src: url('../FONTS/Tw Cen MT Condensed Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Poppins-Light';
-    src: url('../FONTS/Poppins/Poppins-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../FONTS/Poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'QuickSand-Light';
-    src: url('../FONTS/QuickSand/Quicksand-Light.ttf');
-}
-
-@font-face {
-    font-family: 'QuickSand-Bold';
-    src: url('../FONTS/QuickSand/Quicksand-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'BRUX';
-    src: url('../FONTS/Brux-Font/BRUX.otf');
-}
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Quicksand:wght@300;500&display=swap');
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
-    font-family: 'TW-Cen-MT-Condensed';
+    font-family: 'Poppins', sans-serif;
     background: rgb(34, 34, 34) center/cover no-repeat fixed;
-    color: white;
+    color: #ffffff;
     line-height: 1.6;
     text-align: center;
     display: flex;
@@ -45,47 +19,48 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+
 /* General styles for the hobby section */
 .hobby {
-  background-color: #f9f9f9; /* Light background color */
-  padding: 20px;             /* Padding around the content */
-  border-radius: 10px;       /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  max-width: 600px;          /* Max width of the section */
-  margin: 20px auto;         /* Center the section horizontally */
-  font-family: Arial, sans-serif; /* Font style */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Center the title */
 .hobby .center {
-  text-align: center;        /* Center-align text */
-  color: #333;               /* Dark text color */
-  font-size: 24px;           /* Larger font size for the title */
-  margin-bottom: 10px;       /* Space below the title */
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 /* Additional styling for the list of hobbies */
 .hobby ul {
-  list-style-type: none;     /* Remove default list styling */
-  padding: 0;                /* Remove default padding */
+  list-style-type: none;
+  padding: 0;
 }
 
 .hobby li {
-  background-color: #fff;    /* White background for each hobby */
-  margin: 5px 0;             /* Space between each hobby */
-  padding: 10px;             /* Padding inside each hobby item */
-  border-radius: 5px;        /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #ffffff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: rgb(64, 173, 50);
+    color: #40ad32;
 }
 
 .container {
@@ -93,7 +68,7 @@ a:hover {
 }
 
 .gombok {
-    font-family: 'TW-Cen-MT-Condensed';
+    font-family: 'Poppins', sans-serif;
     margin: -0.5cm -0.1cm 0;
     padding: 0.5cm 0;
     background-color: rgba(255, 255, 255, 0.056);
@@ -111,16 +86,16 @@ a:hover {
 }
 
 .gombok a {
-    font-size: 0.8cm;
+    font-size: 1rem;
     padding: 0 0.5cm;
     border-radius: 15px;
     transition: all 0.5s;
 }
 
 .gombok a:hover {
-    font-size: 1cm;
+    font-size: 1.25rem;
     border-radius: 0;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .main {
@@ -130,13 +105,13 @@ a:hover {
 
 .date {
     margin-bottom: 1rem;
-    color: white;
+    color: #ffffff;
 }
 
 #date {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(250, 187, 14);
+    color: #fab70e;
     border-radius: 16px;
 }
 
@@ -154,23 +129,19 @@ footer {
     margin-top: auto;
     padding: 1rem 0;
     font-size: 0.9rem;
-    color: white;
+    color: #ffffff;
     text-align: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.11);
 }
 
 @media (max-width: 1000px) {
-    body {
-        background-color: rgb(34, 34, 34);
-    }
-
     a {
-        font-size: 0.7cm;
+        font-size: 0.875rem;
     }
 
     .gombok {
-        font-family: 'Poppins-Light';
+        font-family: 'Poppins', sans-serif;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
         text-align: center;
         transition: all 1s;
@@ -178,11 +149,11 @@ footer {
 
     .gombok a {
         display: list-item;
-        font-size: 0.6cm;
+        font-size: 0.75rem;
     }
 
     .gombok a:hover {
-        font-size: 0.7cm;
+        font-size: 0.875rem;
         transition: all 0.3s;
     }
 }
