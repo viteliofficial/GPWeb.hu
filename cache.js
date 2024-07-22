@@ -4,7 +4,7 @@
     // List of files to update
     var filesToCacheBust = [
         'CSS/style.css',
-        'script.js',
+        'Rating System.js',
         'index.html'
     ];
 
