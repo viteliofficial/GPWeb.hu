@@ -20,6 +20,37 @@ body {
     margin: 0;
 }
 
+#rating {
+    margin-bottom: 20px;
+}
+
+#rating button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#rating button:hover {
+    background-color: #ddd;
+}
+
+#rating button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#rating button.submitted {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+#average {
+    font-size: 24px;
+    font-weight: bold;
+}
 /* General styles for the hobby section */
 .hobby {
   background-color: #f9f9f9;
