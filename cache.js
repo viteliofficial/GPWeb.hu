@@ -1,5 +1,5 @@
 //(function() {
-    var version = '1.0.2';  // Change this version number whenever you make updates
+    var version = '1.0.3';  // Change this version number whenever you make updates
 
     // List of files to update
     var filesToCacheBust = [
