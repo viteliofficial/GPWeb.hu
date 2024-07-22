@@ -6,42 +6,69 @@
     <title>Hamarosan</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #e9ecef;
         }
         .container {
             text-align: center;
-            padding: 20px;
+            padding: 40px;
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
         }
         .title {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #343a40;
         }
         .message {
             font-size: 1.2em;
-            color: #666;
+            color: #6c757d;
+            margin-bottom: 20px;
         }
         .coming-soon {
             margin-top: 20px;
+            font-size: 1.1em;
+            color: #495057;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        .btn-back {
+            margin-top: 30px;
+            padding: 10px 20px;
             font-size: 1em;
-            color: #999;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="title">Hamarosan</div>
-        <div class="message">Ez az oldal jelenleg fejlesztés alatt áll.</div>
-        <div class="coming-soon">Kérjük, térjen vissza később!</div>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Company Logo">
+        </div>
+        <div class="title">Hamarosan Elérhető</div>
+        <div class="message">Ez az oldal jelenleg fejlesztés alatt áll. Dolgozunk azon, hogy minél hamarabb elérhetővé tegyük Ön számára.</div>
+        <div class="coming-soon">Kérjük, nézzen vissza később, vagy lépjen kapcsolatba velünk további információkért!</div>
+        <a href="index.html" class="btn-back">Vissza a főoldalra</a>
     </div>
 </body>
 </html>
