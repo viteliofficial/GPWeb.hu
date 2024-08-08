@@ -1,6 +1,6 @@
 # GPWeb.hu
 
-## Verzió: v0.5
+## Verzió: v0.6
 
 ### Jelenlegi Állapot
 A weboldal jelenleg a v0.5 verziónál tart, ami azt jelenti, hogy még fejlesztés alatt áll. Bizonyos funkciók és oldalak még nem érhetők el, de folyamatosan dolgozunk rajtuk.
