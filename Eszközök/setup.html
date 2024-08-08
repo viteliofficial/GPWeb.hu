@@ -1,120 +1,79 @@
-<!---
-
-  Weboldal Verzió: V3.4
-  Készítette: Csiba Zsombor
--->
-
 <!DOCTYPE html>
 <html lang="hu" manifest="../app_cache.appcache">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="st">
-    <link rel="stylesheet" href="../CSS/loading.css">
     <title>Eszközök</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Updated CSS link -->
+    <link rel="stylesheet" href="../CSS/loading.css">
 </head>
 <body>
 
-  
-  <div class="website-name">
+    <header>
+        <h1>Eszközök</h1>
+        <nav class="gombok">
+            <a href="../index.html"><strong>🔰 Kezdőlap</strong></a>
+            <a href="Informáciok.html" title="Információk a Weboldalról"><strong>ℹ Információk</strong></a>
+            <a href="setup.html"><strong>🖥 Setup</strong></a>
+            <a href="https://netbyofficial.github.io/NetBy-AI"><strong>🤖 NetBy AI</strong></a>
+            <a href="Linkek.html"><strong>⚡ Linkek [Új]</strong></a>
+            <a href="../Twitch Stream Menetrend/index.html"><strong>📅 Stream Menetrend</strong></a>
+        </nav>
+    </header>
 
-  </div>
-    <div class="gombok">
-        <a href="../index.html"><strong>🔰Kezdőlap</strong></a>
-        <a href="Informáciok.html"title="Információk a Weboldalról"><strong>ℹ Infórmációk</strong></a>
-        <a href="setup.html"><strong>🖥 Setup</strong></a>
-        <a href="https://netbyofficial.github.io/NetBy-AI"><strong>🤖 NetBy AI </strong></a>
-        <a href="Linkek.html"><strong>⚡ Linkek [Új]</strong></a>
-        <a href="../Twitch Stream Menetrend/index.html"><strong>📅 Stream Menetrend</strong></a>
-        
-       </div>
-
-    <div class="fejlesztesalatt">
+    <div class="fejesztesalatt">
         <h6>Weboldal Fejlesztés alatt!</h6>
-      </div>
+    </div>
 
-        <div class="sarokverziokijelzo">
-          <h4 class="Verzió"></h4>
-          </div>
-          
-    <!--   <div class="countdown-title" id="countdown-title">
-            NetBy-AI megjelenése: 
-          </div>
-          
-          <div id="countdown" class="countdown">
-            
-            <div class="time">
-             <h2 id="days">0</h2>
-             <small>Nap</small>
-            </div>
-            
-      
-            <div class="time">
-             <h2 id="hours">0</h2>
-             <small>Óra</small>
-            </div>
-          
-            <div class="time">
-             <h2 id="minutes">0</h2>
-             <small>Perc</small>
-            </div>
-          
-            <div class="time">
-             <h2 id="seconds">0</h2>
-             <small>Másodperc</small>
-            </div>
-            
-           </div>-->
-           
+    <div class="sarokverziokijelzo">
+        <h4 class="Verzió">Verzió: V3.4</h4>
+    </div>
+    
     <div class="description-pc" draggable="false">
-      <h2><strong>Számítógép </strong></h2>
-      <div class="case"><strong>Gépház:</strong> NZXT H7 Flow RGB White</div>
-      <div class="cpu" ><strong>CPU:</strong> i5-12600KF</div>
-      <div class="ram"><strong>RAM:</strong> 16GB Kingston HyperX Fury</div>
-      <div class="gpu"><strong>GPU:</strong> NVIDIA GeForce GTX 1660 SUPER</div>
-      <div class="os"><strong>OS:</strong> Windows 11 Pro</div>
-      <div class="mbo"><strong>Alaplap:</strong> Gigabyte Z690 Gaming</div>
-      <div class="storage"><strong>SSD1:</strong> Samsung 970 EVO Plus 1TB</div>
-      <div class="storage"><strong>SSD2:</strong> Samsung 870 EVO 2TB</div>
-      <div class="storage"><strong>SSD3:</strong> Patriot Burst 960GB</div>
+        <h2><strong>Számítógép</strong></h2>
+        <div class="case"><strong>Gépház:</strong> NZXT H7 Flow RGB White</div>
+        <div class="cpu"><strong>CPU:</strong> i5-12600KF</div>
+        <div class="ram"><strong>RAM:</strong> 16GB Kingston HyperX Fury</div>
+        <div class="gpu"><strong>GPU:</strong> NVIDIA GeForce GTX 1660 SUPER</div>
+        <div class="os"><strong>OS:</strong> Windows 11 Pro</div>
+        <div class="mbo"><strong>Alaplap:</strong> Gigabyte Z690 Gaming</div>
+        <div class="storage"><strong>SSD1:</strong> Samsung 970 EVO Plus 1TB</div>
+        <div class="storage"><strong>SSD2:</strong> Samsung 870 EVO 2TB</div>
+        <div class="storage"><strong>SSD3:</strong> Patriot Burst 960GB</div>
     </div>
     
     <div class="description-programs" draggable="false">
-      <h2><strong>Szoftverek </strong></h2>
-      <div class="programs">
-        <div class="program"><strong>Vágóprogram:</strong> Adobe Premiere Pro</div>
-        <div class="program"><strong>Képszerkesztő:</strong> PhotoScape X Pro, Paint.net</div>
-        <div class="program"><strong>Rögzítés:</strong> OBS Studio</div>
-        <div class="program"><strong>Hangszerkesztő:</strong> Adobe Audition</div>
-        <div class="program"><strong>Böngésző:</strong> Firefox</div>
-        <div class="program" onclick="P_VSC()"><strong> Szövegszerkesztő:</strong> Visual Studio Code</div>
-        <div class="etc"><strong>-</strong></div>
-      </div>
+        <h2><strong>Szoftverek</strong></h2>
+        <div class="programs">
+            <div class="program"><strong>Vágóprogram:</strong> Adobe Premiere Pro</div>
+            <div class="program"><strong>Képszerkesztő:</strong> PhotoScape X Pro, Paint.net</div>
+            <div class="program"><strong>Rögzítés:</strong> OBS Studio</div>
+            <div class="program"><strong>Hangszerkesztő:</strong> Adobe Audition</div>
+            <div class="program"><strong>Böngésző:</strong> Firefox</div>
+            <div class="program" onclick="P_VSC()"><strong>Szövegszerkesztő:</strong> Visual Studio Code</div>
+            <div class="etc"><strong>-</strong></div>
+        </div>
     </div>
 
     <div class="description-more" draggable="false">
-    <h2><strong>Egyéb </strong></h2>
-    <div class="device"><strong>Monitor: </strong> MSI G2422</div>
-    <div class="device"><strong>Egér:</strong> Razer Viper 8k</div>
-    <div class="device"><strong>Billentyűzet:</strong> White Shark Shinobi (Black, Blue Switch)</div>
-    <div class="device"><strong>Mikrofon:</strong> Genesis Radium 300 XLR</div>
-    <div class="device"><strong>Telefon:</strong> Samsung Galaxy A34 5G</div>
-    <br><br><br><br>
-
+        <h2><strong>Egyéb</strong></h2>
+        <div class="device"><strong>Monitor:</strong> MSI G2422</div>
+        <div class="device"><strong>Egér:</strong> Razer Viper 8k</div>
+        <div class="device"><strong>Billentyűzet:</strong> White Shark Shinobi (Black, Blue Switch)</div>
+        <div class="device"><strong>Mikrofon:</strong> Genesis Radium 300 XLR</div>
+        <div class="device"><strong>Telefon:</strong> Samsung Galaxy A34 5G</div>
     </div>
 
-      <br>
     <div class="image-setup">
-      <img src="../képek/Setup/PC/20240219_191007.jpg" alt="PC - NetBy" title="PC - NetBy">
+        <img src="../képek/Setup/PC/20240219_191007.jpg" alt="PC - NetBy" title="PC - NetBy">
     </div>
     
-<footer>
-  <p>NetBy @ 2024 Minden jog fenntartva.</p>
-</footer>
-</body>
+    <footer>
+        <p>NetBy @ 2024 Minden jog fenntartva.</p>
+    </footer>
 
-<script src="../JS/jsdelivr.js"></script>
-<script src="../JS/sütik.js"></script>
-<!--<script src="../JS/countdown-netby-ai.js"></script>-->
+    <script src="../JS/jsdelivr.js"></script>
+    <script src="../JS/sütik.js"></script>
+</body>
 </html>

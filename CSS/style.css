@@ -1,5 +1,5 @@
-/* Importing fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Quicksand:wght@300;500&display=swap');
+/* Importing modern fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@300;500&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -8,187 +8,161 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(34, 34, 34) center/cover no-repeat fixed;
-    color: #ffffff;
-    line-height: 1.6;
-    text-align: center;
+    background-color: #000; /* Black background for the body */
+    color: #e0e0e0; /* Light gray text color for contrast */
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    line-height: 1.6;
+    animation: fadeIn 0.6s ease-in-out; /* Apply fade-in animation */
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #111; /* Slightly lighter black for the header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+header h1 {
     margin: 0;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: #333; /* Dark gray for links */
+    transition: background 0.3s, transform 0.3s;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background-color: #444; /* Slightly lighter gray for hover effect */
+    transform: scale(1.05);
 }
 
 .rating {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .rating button {
-    font-size: 20px;
-    padding: 10px 20px;
-    margin: 5px;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0.25rem;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #222; /* Very dark gray for buttons */
+    color: #e0e0e0;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .rating button:hover {
-    background-color: #ddd;
+    background-color: #333; /* Slightly lighter gray for hover effect */
 }
 
 .rating button:disabled {
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .rating button.submitted {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #28a745; /* Bright green for submitted state */
+    color: #fff;
     transform: scale(1.1);
 }
 
 .average {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
+    margin-top: 1rem;
+    color: #e0e0e0;
 }
-/* General styles for the hobby section */
+
 .hobby {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-  font-family: 'Quicksand', sans-serif;
+    background-color: #222; /* Dark gray for the hobby section */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Darker shadow for contrast */
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Quicksand', sans-serif;
 }
 
-/* Center the title */
 .hobby .center {
-  text-align: center;
-  color: #333;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
-/* Additional styling for the list of hobbies */
 .hobby ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .hobby li {
-  background-color: #ffffff;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #40ad32;
-}
-
-.container {
-    text-align: center;
-}
-
-.gombok {
-    font-family: 'Poppins', sans-serif;
-    margin: -0.5cm -0.1cm 0;
-    padding: 0.5cm 0;
-    background-color: rgba(255, 255, 255, 0.056);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
-    border-radius: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    transition: box-shadow 0.3s;
-}
-
-.gombok:hover {
-    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.39);
-}
-
-.gombok a {
-    font-size: 1rem;
-    padding: 0 0.5cm;
-    border-radius: 15px;
-    transition: all 0.5s;
-}
-
-.gombok a:hover {
-    font-size: 1.25rem;
-    border-radius: 0;
-    opacity: 1;
-}
-
-.main {
-    font-size: 5rem;
-    font-weight: bold;
-}
-
-.date {
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
-
-#date {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fab70e;
-    border-radius: 16px;
-}
-
-#ma {
-    margin-top: 1rem;
-}
-
-#szuletesnap {
-    display: none;
-    font-size: 2rem;
-    color: #ff6600;
+    background-color: #333; /* Darker gray for list items */
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Darker shadow for contrast */
+    color: #e0e0e0;
 }
 
 footer {
-    margin-top: auto;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #ffffff;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #e0e0e0;
     text-align: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: #111; /* Same as header for consistency */
+    position: absolute;
+    bottom: 0;
 }
 
-@media (max-width: 1000px) {
-    a {
+@media (max-width: 768px) {
+    .navbar a {
         font-size: 0.875rem;
+        padding: 0.5rem;
     }
 
-    .gombok {
-        font-family: 'Poppins', sans-serif;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
-        text-align: center;
-        transition: all 1s;
+    .rating button {
+        font-size: 1.25rem;
+        padding: 0.5rem 1rem;
     }
 
-    .gombok a {
-        display: list-item;
-        font-size: 0.75rem;
-    }
-
-    .gombok a:hover {
-        font-size: 0.875rem;
-        transition: all 0.3s;
+    .average {
+        font-size: 1.5rem;
     }
 }
 
-.img {
-    border-radius: 15px;
+img {
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
