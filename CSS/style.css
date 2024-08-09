@@ -17,7 +17,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     line-height: 1.6;
-    animation: fadeIn 0.6s ease-in-out; /* Apply fade-in animation */
+    animation: fadeIn 0.4s ease-in-out; /* Apply fade-in animation */
 }
 
 header {
