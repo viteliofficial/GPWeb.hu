@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GP - Website</title>
     <link rel="shortcut icon" href="UGP icon.ico" type="image/x-icon">
+
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/tartalom.css">
+
+    <!-- Firebase JS SDKs -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
@@ -25,20 +29,26 @@
         </nav>
     </header>
 
-    <div class="rating">
-        <button data-rating="1">☆</button>
-        <button data-rating="2">☆☆</button>
-        <button data-rating="3">☆☆☆</button>
-        <button data-rating="4">☆☆☆☆</button>
-        <button data-rating="5">☆☆☆☆☆</button>
-    </div>
+    <main>
+        <section class="rating">
+            <h2>Rate Our Website</h2>
+            <button data-rating="1">☆</button>
+            <button data-rating="2">☆☆</button>
+            <button data-rating="3">☆☆☆</button>
+            <button data-rating="4">☆☆☆☆</button>
+            <button data-rating="5">☆☆☆☆☆</button>
+        </section>
 
-    <div id="average" class="average"></div>
+        <section id="average" class="average">
+            <!-- Average rating will be displayed here -->
+        </section>
+    </main>
 
     <footer>
-        v0.5 @ NetBy Által fejlesztett
+        <p>v0.5 @ Developed by NetBy</p>
     </footer>
 
+    <!-- JS Scripts -->
     <script src="JS/date.js"></script>
     <script src="JS/szuletesnap.js"></script>
     <script src="Rating System.js"></script>
