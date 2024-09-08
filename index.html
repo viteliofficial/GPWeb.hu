@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GP - Website</title>
-    <link rel="shortcut icon" href="UGP icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="UGP_icon.ico" type="image/x-icon">
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/tartalom.css">
 
     <!-- Firebase JS SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>  
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-messaging.js"></script>  
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js" type="module"></script>
 </head>
 <body>
     <header>
         <h1>UHD-GP Web</h1>
         <nav class="navbar">
             <a href="index.html">Kezdőlap 🔰</a>
-            <a href="INFO">Információk ℹ</a>
+            <a href="INFO/index.html">Információk ℹ</a>
             <a href="soon.html">Eszközök 💻</a>
             <a href="soon.html">Beállítások ⚙️</a>
         </nav>
@@ -32,11 +32,13 @@
     <main>
         <section class="rating">
             <h2>Rate Our Website</h2>
-            <button data-rating="1">☆</button>
-            <button data-rating="2">☆☆</button>
-            <button data-rating="3">☆☆☆</button>
-            <button data-rating="4">☆☆☆☆</button>
-            <button data-rating="5">☆☆☆☆☆</button>
+            <div class="rating-buttons">
+                <button data-rating="1">☆</button>
+                <button data-rating="2">☆☆</button>
+                <button data-rating="3">☆☆☆</button>
+                <button data-rating="4">☆☆☆☆</button>
+                <button data-rating="5">☆☆☆☆☆</button>
+            </div>
         </section>
 
         <section id="average" class="average">
@@ -49,9 +51,9 @@
     </footer>
 
     <!-- JS Scripts -->
-    <script src="JS/date.js"></script>
-    <script src="JS/szuletesnap.js"></script>
-    <script src="Rating System.js"></script>
-    <script src="https://netby-official.github.io/NetBy.hu/libs/netby.lib.js"></script>
+    <script src="JS/date.js" type="module"></script>
+    <script src="JS/szuletesnap.js" type="module"></script>
+    <script src="Rating_System.js" type="module"></script>
+    <script src="https://netby-official.github.io/NetBy.hu/libs/netby.lib.js" type="module"></script>
 </body>
 </html>
