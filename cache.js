@@ -1,12 +1,12 @@
 //(function() {
-    var version = '1.1.0';  // Change this version number whenever you make updates
+    var version = '1.1.1';  // Change this version number whenever you make updates
 
     // List of files to update
     var filesToCacheBust = [
         'CSS/style.css',
-        'Rating System.js',
         'index.html',
         'soon.html'
+        'INFO/index.html'
     ];
 
     // Function to append version query string to URLs
