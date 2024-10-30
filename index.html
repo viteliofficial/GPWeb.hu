@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GP - Website</title>
-    <link rel="shortcut icon" href="UGP_icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="IMAGES/UGP icon.ico" type="image/x-icon">
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -17,37 +17,47 @@
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js" type="module"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>UHD-GP Web</h1>
-        <nav class="navbar">
-            <a href="index.html">Kezdőlap 🔰</a>
-            <a href="INFO/index.html">Információk ℹ</a>
-            <a href="soon.html">Eszközök 💻</a>
-            <a href="soon.html">Beállítások ⚙️</a>
-        </nav>
+        <div class="header-content">
+            <h1>GP Web</h1>
+            <nav class="navbar">
+                <a href="index.html">Kezdőlap 🔰</a>
+                <a href="INFO/index.html">Információk ℹ</a>
+                <a href="soon.html">Eszközök 💻</a>
+                <a href="soon.html">Beállítások ⚙️</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="rating">
-            <h2>Rate Our Website</h2>
-            <div class="rating-buttons">
-                <button data-rating="1">☆</button>
-                <button data-rating="2">☆☆</button>
-                <button data-rating="3">☆☆☆</button>
-                <button data-rating="4">☆☆☆☆</button>
-                <button data-rating="5">☆☆☆☆☆</button>
-            </div>
+        <section class="intro">
+            <h2>Üdvözöllek a weboldalon!</h2>
+            <p>Itt mindent megtalálsz amit csak szeretnél.</p>
         </section>
-
-        <section id="average" class="average">
-            <!-- Average rating will be displayed here -->
+    
+        <section class="social-media">
+            <h2>Kövess be!</h2>
+            <div class="social-buttons">
+                <a href="https://www.youtube.com/@UGP-s8p" target="_blank" class="youtube">
+                    <img src="IMAGES/YouTube_23392.ico" alt="YouTube"> YouTube
+                </a>
+                <a href="https://www.tiktok.com/@gergopanda" target="_blank" class="tiktok">
+                    <img src="IMAGES/tiktok logo.png" alt="TikTok"> TikTok
+                </a>
+                <a href="https://www.instagram.com/gergojancsurak" target="_blank" class="instagram">
+                    <img src="IMAGES/Instagram_icon-icons.com_66804.ico" alt="Instagram"> Instagram
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>v0.5 @ Developed by NetBy</p>
+        <p>v1.0 @ Fejlesztő és karbantartó: Viteli</p>
     </footer>
 
     <!-- JS Scripts -->

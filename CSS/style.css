@@ -30,6 +30,7 @@ header {
     text-align: center;
     color: #e0e0e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slightly lighter shadow for a smoother effect */
+    animation: slideDown 0.8s ease-in-out; /* Header sliding down */
 }
 
 header h1 {
@@ -37,6 +38,7 @@ header h1 {
     font-size: 2.5rem;
     color: #f0a500;
     transition: color 0.3s ease; /* Smooth color transition */
+    animation: popIn 0.5s ease-in-out; /* Pop-in effect */
 }
 
 .navbar {
@@ -55,6 +57,7 @@ header h1 {
     transition: background 0.3s ease, transform 0.3s ease;
     font-weight: 500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smooth shadow for depth */
+    animation: fadeIn 1s ease-in-out, floatUp 1s infinite ease-in-out alternate; /* Smooth entrance and floating */
 }
 
 .navbar a:hover {
@@ -64,6 +67,7 @@ header h1 {
 
 .rating {
     margin-bottom: 2rem;
+    animation: popIn 1s ease; /* Pop-in for smooth effect */
 }
 
 .rating button {
@@ -77,17 +81,13 @@ header h1 {
     color: #f0f0f0;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for smooth hover effect */
+    animation: fadeIn 1s ease, floatUp 1.5s infinite ease-in-out alternate;
 }
 
 .rating button:hover {
     background: #3b4048;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
-}
-
-.rating button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
 }
 
 .rating button.submitted {
@@ -101,16 +101,17 @@ header h1 {
     font-weight: bold;
     margin-top: 1rem;
     color: #f0a500;
+    animation: fadeIn 1.2s ease-out; /* Fade-in for average rating display */
 }
 
 .hobby {
-    background: linear-gradient(135deg, #333, #444);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 2rem auto;
     font-family: 'Quicksand', sans-serif;
+    animation: fadeInUp 1.2s ease-in-out; /* Smooth slide-up appearance */
 }
 
 .hobby .center {
@@ -126,12 +127,14 @@ header h1 {
 }
 
 .hobby li {
-    background: linear-gradient(135deg, #555, #666);
+    background: linear-gradient(45deg, #ff6e6191, #ffc928ad);
     margin: 0.5rem 0;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     color: #f0f0f0;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Initial opacity to animate in */
 }
 
 footer {
@@ -143,6 +146,7 @@ footer {
     background: linear-gradient(90deg, #0a0f15, #1c2b36);
     position: absolute;
     bottom: 0;
+    animation: slideUp 0.8s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -163,8 +167,10 @@ footer {
 
 img {
     border-radius: 10px;
+    animation: fadeIn 1.5s ease-out;
 }
 
+/* Keyframes for Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -173,3 +179,122 @@ img {
         opacity: 1;
     }
 }
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 600px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    color: #f0a500;
+    margin-bottom: 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-buttons a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hover effects for each platform */
+.social-buttons a.youtube {
+    background: #FF0000;
+}
+.social-buttons a.youtube:hover {
+    background: #CC0000;
+    transform: scale(1.05);
+}
+
+.social-buttons a.tiktok {
+    background: #01010113;
+}
+.social-buttons a.tiktok:hover {
+    background: #22222215;
+    transform: scale(1.05);
+}
+
+.social-buttons a.instagram {
+    background: linear-gradient(45deg, #f58529bd, #dd2a7bcb, #8234afbb, #515BD4);
+}
+.social-buttons a.instagram:hover {
+    transform: scale(1.05);
+}
+
